@@ -29,20 +29,20 @@ You can add the ``static/gamification-server-request.js`` file to any remote app
 
 * Download and unpack [the project](https://github.com/devleague/gamification-server) on your Raspberry Pi in the directory of your choice. Or alternatively checkout from source:
 
-```
-$ git clonegit@github.com:devleague/gamification-server.git
+```bash
+$ git clone git@github.com:devleague/gamification-server.git
 $ cd gamification-server
 ```
 
 * Next, inside the project, you need to install the project's various NPM dependencies:
 
-```
+```bash
 $ npm install
 ```
 
 * And you should now be ready to spin up a development build of your new project:
 
-```
+```bash
 $ npm start
 ```
 
