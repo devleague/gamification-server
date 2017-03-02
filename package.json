@@ -1,0 +1,26 @@
+{
+  "name": "gamification-server",
+  "version": "1.0.0",
+  "description": "Server to track gamification elements (badges, points, tags) to work pages or apps Edit",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devleague/gamification-server.git"
+  },
+  "author": "DevLeague",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devleague/gamification-server/issues"
+  },
+  "homepage": "https://github.com/devleague/gamification-server#readme",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "mongoose": "^4.8.5"
+  }
+}
