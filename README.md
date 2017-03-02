@@ -1,11 +1,12 @@
 # Gamification Server
 
-Gamification-server provides a framework for providing awards/points to users or teams and can be operated either standalone or integrated with other web-based applications. Based on the notion of badges used within other gamification systems. The gamification-server is implemented as an Express.js web application, built by [DevLeague](http://www.devleague.com/).
+Gamification-server provides a framework for providing awards/points to users or teams and can be operated either standalone or integrated with other web-based applications. Based on the notion of badges used within other gamification systems. The gamification-server is implemented as an Express.js web application. This gamification server was built by [DevLeague](http://www.devleague.com/).
 
 
 ## APIs and remote usage
 
 Gamification-server is designed so that other sites can send in "signals" that are parsed through a rules engine and generate points and badges.  Also, other sites and apps can pull in JSON to list badges that a user has.
+
 
 ### End Points
 
@@ -15,13 +16,16 @@ Returns an array of all the players
 * POST `/api/player/new`
 Creates a new player and returns the new player
 
-* GET `/api/player/<PLAYER_ID>`
+* GET `/api/player/id/<PLAYER_ID>`
 Returns the player's current stats, badges and achievements
 
-* GET `/api/player/<PLAYER_ID>/badges`
+* GET `/api/player/name/<PLAYER_NAME>`
+Returns the player's current stats, badges and achievements
+
+* GET `/api/player/<PLAYER_NAME>/badges`
 Returns all the badges
 
-* POST `/api/player/<PLAYER_ID>/assign_badge`
+* POST `/api/player/<PLAYER_NAME>/assign_badge`
 Creates a new badge for the player and returns an array of all the players badges.
 
 
